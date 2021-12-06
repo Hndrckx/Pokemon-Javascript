@@ -11,20 +11,20 @@ class Pokemon{
 class Raichu extends Pokemon{
     constructor(nom, lvl, pdv, speed, type, fatal, boule, vive, eclair){
         super(nom, lvl, pdv, speed, type)
-        this.fatal = (a,b) =>
-        this.boule = (a,b) =>
-        this.vive = (a,b) =>
-        this.eclair = (a,b) =>
+        //this.fatal = (a,b) =>
+        //this.boule = (a,b) =>
+        //this.vive = (a,b) =>
+        //this.eclair = (a,b) =>
     }      
 }
 
 class Dracolosse extends Pokemon{
     constructor(nom, lvl, pdv, speed, type, danse, laser, vol, vampi){
         super(nom, lvl, pdv, speed, type)
-        this.danse = (a,b) =>
-        this.laser = (a,b) =>
-        this.vol = (a,b) =>
-        this.vampi = (a,b) => 
+        //this.danse = (a,b) =>
+        //this.laser = (a,b) =>
+        //this.vol = (a,b) =>
+        //this.vampi = (a,b) => 
     }
 }
 
