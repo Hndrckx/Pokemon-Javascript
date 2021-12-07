@@ -1,8 +1,11 @@
-//import {Pokemon, poke1, poke2, cpuPoke, leadPoke} from "./modules/class.js"
 import {fight} from "./modules/function.js"
+import {
+    leadPoke,
+    cpuPoke
+} from "./modules/class.js"
 
 
 
-fight()
+fight(leadPoke, cpuPoke)
 
 
