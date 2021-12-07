@@ -1,7 +1,8 @@
-import {Pokemon, Raichu, Dracolosse} from "./modules/class.js"
-import {} from "./modules/function.js"
+//import {Pokemon, poke1, poke2, cpuPoke, leadPoke} from "./modules/class.js"
+import {fight} from "./modules/function.js"
 
-console.log("Un Pokémon sauvage apparaît");
-console.log("Vous envoyez Raichu au combat");
+
+
+fight()
 
 

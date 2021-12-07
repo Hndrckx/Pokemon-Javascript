@@ -1,4 +1,4 @@
-class Pokemon{
+export class Pokemon{
     constructor(nom, lvl, pdv, speed, type){
         this.nom = nom
         this.lvl = lvl
@@ -8,41 +8,49 @@ class Pokemon{
     }
 }
 
-class Raichu extends Pokemon{
+ export class poke1 extends Pokemon{
     constructor(nom, lvl, pdv, speed, type){
         super(nom, lvl, pdv, speed, type)
         this.fatal = (a) => {
             a.pdv -= 30
+            alert("Fatal Foudre utilisé")
         }
         this.boule = (a) => {
             a.pdv -= 25
+            alert("Boul'Elec utilisé")
         }
         this.vive = (a) => {
             a.pdv -= 15
+            alert("Vive-Attaque utilisé")
         }
         this.eclair = (a) => {
             a.pdv -= 20
+            alert("Éclair utilisé")
         }
     }      
 }
 
-class Dracolosse extends Pokemon{
+export class poke2 extends Pokemon{
     constructor(nom, lvl, pdv, speed, type){
         super(nom, lvl, pdv, speed, type)
-        this.danse = (b) => {
-            b.pdv -= 15
+        this.danse = (a) => {
+            a.pdv -= 15
+            alert("Danse Draco utilisé")
         }
-        this.laser = (b) => {
-            b.pdv -= 30
+        this.laser = (a) => {
+            a.pdv -= 30
+            alert("Ultralaser utilisé")
         }
-        this.vol = (b) => {
-            b.pdv -= 25
+        this.vol = (a) => {
+            a.pdv -= 25
+            alert("Vol utilisé")
         }
-        this.vampi = (b) => {
-            b.pdv -= 25
+        this.vampi = (a) => {
+            a.pdv -= 25
+            alert("Vampirisme utilisé")
         }
     }
 }
 
-let raichu = new Raichu ("Raichu", 54, 100, 80, ["Electrique", "Fée"])
-let dracolosse = new Dracolosse ("Dracolosse", 57, 100, 65, ["Dragon"])
+export let leadPoke = new poke1 ("Raichu", 54, 100, 80, ["Electrique", "Fée"]);
+export let cpuPoke = new poke2 ("Dracolosse", 57, 100, 65, ["Dragon"]);
