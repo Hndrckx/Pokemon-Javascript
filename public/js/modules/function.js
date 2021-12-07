@@ -83,15 +83,13 @@ export function fight(lead, cpu) {
                     break;
             }
 
-        }
-        // alert('squallalalalala')
-
+        }  
         // let result;
         // if (cpu.pdv <= 0) {
         //     result = "Félicitations, tu as gagné le combat";
         // } else if (lead.pdv <= 0) {
         //     result = "Ton Pokémon est K.O.";
         // }
-        // return result;
+        // console.log(result);
     }
 }
