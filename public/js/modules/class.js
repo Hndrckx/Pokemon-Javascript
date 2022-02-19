@@ -1,5 +1,5 @@
-export class Pokemon{
-    constructor(nom, lvl, pdv, speed, type){
+export class Pokemon {
+    constructor(nom, lvl, pdv, speed, type) {
         this.nom = nom
         this.lvl = lvl
         this.pdv = pdv
@@ -8,8 +8,8 @@ export class Pokemon{
     }
 }
 
- export class poke1 extends Pokemon{
-    constructor(nom, lvl, pdv, speed, type){
+export class Poke1 extends Pokemon {
+    constructor (nom, lvl, pdv, speed, type) {
         super(nom, lvl, pdv, speed, type)
         this.fatal = (a) => {
             a.pdv -= 30
@@ -30,8 +30,8 @@ export class Pokemon{
     }      
 }
 
-export class poke2 extends Pokemon{
-    constructor(nom, lvl, pdv, speed, type){
+export class Poke2 extends Pokemon {
+    constructor (nom, lvl, pdv, speed, type) {
         super(nom, lvl, pdv, speed, type)
         this.danse = (a) => {
             a.pdv -= 15
@@ -52,5 +52,5 @@ export class poke2 extends Pokemon{
     }
 }
 
-export let leadPoke = new poke1 ("Raichu", 54, 100, 80, ["Electrique", "Fée"]);
-export let cpuPoke = new poke2 ("Dracolosse", 57, 100, 65, ["Dragon"]);
+export const leadPoke = new Poke1 ("Raichu", 54, 100, 80, ["Electrique", "Fée"]);
+export const cpuPoke = new Poke2 ("Dracolosse", 57, 100, 65, ["Dragon"]);
